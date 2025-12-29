@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Tasks Manager
 
-## Getting Started
+A modern, responsive task management application built with **Next.js 15** (App Router) featuring real-time data fetching, optimistic UI updates, and theme switching capabilities.
 
-First, run the development server:
+---
 
+##  Features
+
+- ** Task Management**: Create, read, update, and delete tasks
+- ** Smart Search**: Filter tasks by title in real-time
+- ** Toggle Completion**: Mark tasks as complete/incomplete with instant feedback
+- ** Optimistic Updates**: Lightning-fast UI updates using React Query
+- ** Theme Support**: Seamless dark/light mode switching
+- ** Fully Responsive**: Optimized for mobile, tablet, and desktop devices
+- ** Real-time Sync**: Data fetching powered by React Query
+
+> **Note**: This app uses [JSONPlaceholder](https://jsonplaceholder.typicode.com/todos) as a demo API. All mutations (create, update, delete) are handled client-side and won't persist on the server.
+
+---
+
+##  Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| **Next.js 15+** | React framework with App Router |
+| **TypeScript** | Type-safe development |
+| **Tailwind CSS** | Utility-first styling |
+| **React Query** | Server state management |
+| **next-themes** | Theme management |
+| **pnpm** | Fast package manager |
+
+---
+
+##  Installation
+
+### Prerequisites
+- Node.js 18+
+- pnpm (recommended) or npm/yarn
+
+### Steps
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Matin-Sangabi/todo-list.git
+cd todo-list
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **install the dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **open your browser**
+```bash
+http://localhost:3000
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
